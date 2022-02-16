@@ -1,0 +1,221 @@
+/*Making any image fit into its container */
+img {
+  width: 100%;
+}
+
+.btn-primary, .btn-secondary {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 8px 20px;
+  margin: 3px;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+.btn-primary {
+  background-color: #418bff;
+}
+
+.btn-secondary {
+  margin: 50px;
+  background-color: #ff8700;
+}
+
+.container {
+  max-width: 80vw;
+  padding: 0 30px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f4f4;
+  font-family: Poppins, sans-serif;
+  line-height: 1.6;
+}
+
+.showcase {
+  /*background-color: $primary-color;*/
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(#000)), url("/images/leanSteak.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), #000), url("/images/leanSteak.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  min-height: 50vh;
+  /*showcase-content*/
+}
+
+.showcase .container nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+
+.showcase .container nav .logo {
+  max-height: 4rem;
+  max-width: 13rem;
+}
+
+.showcase .container nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+.showcase .container nav li {
+  padding: 15px;
+}
+
+.showcase .container nav a:hover {
+  color: #ff8700;
+}
+
+.showcase .container nav .customer-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.showcase .container nav .customer-profile .profile {
+  padding: 10px;
+}
+
+.showcase a {
+  color: #fff;
+}
+
+.showcase-content {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 100px;
+}
+
+.showcase-content img {
+  width: 50%;
+}
+
+.showcase-content h1 {
+  font-size: 50px;
+  line-height: 1.2;
+}
+
+.showcase-content p {
+  margin: 20px 0;
+}
+
+.promotion {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.2)), to(#000));
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.2), #000);
+  min-height: 50vh;
+}
+
+.promotion .container {
+  height: 100%;
+}
+
+.promotion .promo-product {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.promotion .promo-product .promo-image {
+  height: 100%;
+  width: auto;
+  padding: 50px 0;
+}
+
+.promotion .promo-product .promo {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  text-align: center;
+  margin-left: 50px;
+}
+
+@media only screen and (max-width: 1100px) {
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px;
+  }
+  .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .profile {
+    display: none;
+  }
+  .promo-product {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .promo-product p {
+    display: none;
+  }
+  .promo-product .promo-button {
+    margin: 100px auto;
+    margin-top: 0px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,14 @@
+{
+  "name": "lecholivanillajs",
+  "version": "1.0.0",
+  "description": "Lecholi Vanilla JS Project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kanono Ramashamole",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.49.7"
+  }
+}

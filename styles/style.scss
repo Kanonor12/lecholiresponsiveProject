@@ -1,0 +1,149 @@
+@import "config";
+@import "buttons";
+@import "utilities";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $light-color;
+  font-family: $font-stack;
+  line-height: 1.6;
+}
+
+.showcase {
+  /*background-color: $primary-color;*/
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), #000),
+    url("/images/leanSteak.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  min-height: 50vh;
+  .container {
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+
+      .logo {
+        max-height: 4rem;
+        max-width: 13rem;
+      }
+
+      ul {
+        display: flex;
+        list-style-type: none;
+      }
+
+      li {
+        padding: 15px;
+      }
+
+      a:hover {
+        color: $secondary-color;
+      }
+
+      .customer-profile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .profile {
+          padding: 10px;
+        }
+      }
+    }
+  }
+
+  a {
+    color: #fff;
+  }
+
+  /*showcase-content*/
+  &-content {
+    height: 100%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin-top: 100px;
+
+    img {
+      width: 50%;
+    }
+
+    h1 {
+      font-size: 50px;
+      line-height: 1.2;
+    }
+
+    p {
+      margin: 20px 0;
+    }
+  }
+}
+
+.promotion {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.2), #000);
+  min-height: 50vh;
+
+  .container {
+    height: 100%;
+  }
+
+  .promo-product {
+    height: 100%;
+    display: flex;
+
+    .promo-image {
+      height: 100%;
+      width: auto;
+      padding: 50px 0;
+    }
+
+    .promo {
+      align-self: center;
+      justify-self: center;
+      text-align: center;
+      margin-left: 50px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .profile {
+    display: none;
+  }
+
+  .promo-product {
+    display: flex;
+    flex-direction: column;
+
+    p {
+      display: none;
+    }
+
+    .promo-button {
+      margin: 100px auto;
+      margin-top: 0px;
+    }
+  }
+}
